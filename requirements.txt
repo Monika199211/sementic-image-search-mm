@@ -1,6 +1,7 @@
 fastapi
 uvicorn
 streamlit
+nest_asyncio
 coloredlogs
 pydantic
 langchain_core
@@ -17,3 +18,4 @@ langchain-astradb>=0.6,<0.7
 open_clip_torch
 torch
 python-multipart>=0.0.6
+langchain-qdrant
