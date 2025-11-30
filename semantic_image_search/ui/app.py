@@ -37,7 +37,7 @@ with tab2:
 
     if upload:
         img = Image.open(upload)
-        st.image(img, caption="Query Image", use_container_width=True)
+        st.image(img, caption="Query Image", width='stretch')
 
         buf = io.BytesIO()
         img.save(buf, format="PNG")
