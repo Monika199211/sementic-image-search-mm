@@ -137,11 +137,10 @@ class ImageSearchService:
             # Perform vector search
             results = self.client.query_points(
                 collection_name=self.collection,
-                query=models.QueryVector(vector=vector),
+                query=vector,
                 limit=k,
                 with_payload=True,
-                with_vectors=False,
-                filter=q_filter,
+                with_vectors=False
             )
 
             log.info(

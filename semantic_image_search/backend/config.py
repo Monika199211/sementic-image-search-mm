@@ -82,5 +82,7 @@ class Config:
 # ------------------------------------------------------------
 # 7) Final global config success log
 # ------------------------------------------------------------
-config = Config()
-log.info("Config initialized successfully", status="OK")
+if __name__== "__main__":
+    config = Config()
+    log.info("Config initialized successfully", status="OK")
+    print(config.VECTOR_SIZE)
